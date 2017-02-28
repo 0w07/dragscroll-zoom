@@ -1,16 +1,12 @@
 /**
  * @fileoverview dragscroll-zoom - scroll area by dragging and zoom in~out
- * @version 1.0.0
+ * @version 1.0.1
  *
  * @license MIT, see https://github.com/cymakr/dragscroll-zoom
  * @copyright 2017 cymakr <cymakr@gmail.com>
  *
  * This project began as a fork of dragscroll https://github.com/asvd/dragscroll
  */
-var zoom = 100;
-var sheet = document.createElement('style');
-sheet.innerHTML = "#dragsimg {width:" + zoom + "%;}";
-document.body.appendChild(sheet);
 
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
@@ -96,15 +92,17 @@ document.body.appendChild(sheet);
 }));
 
 function zoomIn(n) {
-    zoom = zoom + n;
-    sheet.innerHTML = "#dragsimg {width:" + zoom + "%;}";
-    document.body.appendChild(sheet);
+    var imgSize = document.getElementById('dragsimg').style.width;
+    var zoom = Number(imgSize.replace(/[^0-9]/g,'')) + n;
+    document.getElementById('dragsimg').style.width = zoom + '%';
 }
 function zoomOut(n) {
-    if(zoom<=100){
+    var imgSize = document.getElementById('dragsimg').style.width;
+
+    if(Number(imgSize.replace(/[^0-9]/g,''))<=100){
         return false;
     }
-    zoom = zoom - n;
-    sheet.innerHTML = "#dragsimg {width:" + zoom + "%;}";
-    document.body.appendChild(sheet);
+
+    var zoom = Number(imgSize.replace(/[^0-9]/g,'')) - n;
+    document.getElementById('dragsimg').style.width = zoom + '%';
 }
