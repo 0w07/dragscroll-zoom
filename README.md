@@ -35,11 +35,11 @@ Add the `dragscroll` class to a scrollable element:
 <button id="zoom-in" onclick="zoomIn(20);">+</button>
 <button id="zoom-out" onclick="zoomOut(20);">-</button>
 <div class="dragscroll">
+  <!-- dragsimg's style(width) specify arbitrary values. DON'T USE CSS -->
   <img id="dragsimg" src="./test.png" style="width:100%"/>
 </div>
 ```
-
-dragsimg's style(width) specify arbitrary values. `DON'T USE CSS`    
+ 
 That's it! Now you can scroll it by dragging. You can also add the
 `dragscroll` class to the `<body>` element and drag the whole page.
 
