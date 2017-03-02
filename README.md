@@ -49,7 +49,7 @@ the users (or even `cursor: grab;` in case the content is not a text).
 
 You can use `zoom-in(number)`,`zoom-out(number)` to zoom in and zoom out a `dragsimg`.  
 You have to put a number in `zoom-in(number)`,`zoom-out(number)`.  
-The recommended number is `20`.
+The image's size changes by a `number`.
 
 If you add or remove the `dragscroll` class dynamically, invoke
 `dragscroll.reset()` to update the listeners.

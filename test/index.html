@@ -1,25 +1,27 @@
 <head>
-<style>
-.dragscroll{
-  margin-top: 43px;
-  margin-bottom: 60px;
-  width: 864px;
-  height: 364px;
-  overflow: scroll;
-  cursor : grab;
-  cursor : -o-grab;
-  cursor : -moz-grab;
-  cursor : -webkit-grab;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-</style>
+    <style>
+        .dragscroll {
+            margin-top: 43px;
+            margin-bottom: 60px;
+            width: 864px;
+            height: 364px;
+            overflow: scroll;
+            cursor: grab;
+            cursor: -o-grab;
+            cursor: -moz-grab;
+            cursor: -webkit-grab;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+    </style>
 </head>
+
 <body>
-<script type="text/javascript" src="./../dragscroll.js"></script>
-<button id="zoom-in" onclick="zoomIn(20);">확대</button>
-<button id="zoom-out" onclick="zoomOut(20);">축소</button>
-<div class="dragscroll">
-  <img id="dragsimg" src="./test.png" />
-</div>
+    <script type="text/javascript" src="./../dragscroll.js"></script>
+    <button id="zoom-in" onclick="zoomIn(20);">+</button>
+    <button id="zoom-out" onclick="zoomOut(20);">-</button>
+    <div class="dragscroll">
+        <!-- dragsimg's style(width) specify arbitrary values. DON'T USE CSS -->
+        <img id="dragsimg" src="./test.png" style="width:100%" />
+    </div>
 </body>
