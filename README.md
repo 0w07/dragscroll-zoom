@@ -62,11 +62,6 @@ opportunity to select the text (see
 
 Thank you for use this lib.
 
-TO DO
-==========
-
-* Edit image movement range `success`
-
-Follow me on instagram: https://www.instagram.com/cxymxa
+-
 
 This project began as a fork of [dragscroll](https://github.com/asvd/dragscroll)
