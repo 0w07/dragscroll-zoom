@@ -39,7 +39,7 @@ Add the `dragscroll` class to a scrollable element:
 </div>
 ```
 
-dragsimg's style(width) specify arbitrary values. `DON'T USE CSS`  
+dragsimg's style(width) specify arbitrary values. `DON'T USE CSS`    
 That's it! Now you can scroll it by dragging. You can also add the
 `dragscroll` class to the `<body>` element and drag the whole page.
 
