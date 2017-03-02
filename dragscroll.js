@@ -8,7 +8,7 @@
  * This project began as a fork of dragscroll https://github.com/asvd/dragscroll
  */
 
-(function (root, factory) {
+(function(root, factory) {
     if (typeof define === 'function' && define.amd) {
         define(['exports'], factory);
     } else if (typeof exports !== 'undefined') {
@@ -16,15 +16,15 @@
     } else {
         factory((root.dragscroll = {}));
     }
-}(this, function (exports) {
+}(this, function(exports) {
     var _window = window;
     var _document = document;
     var mousemove = 'mousemove';
     var mouseup = 'mouseup';
     var mousedown = 'mousedown';
     var EventListener = 'EventListener';
-    var addEventListener = 'add'+EventListener;
-    var removeEventListener = 'remove'+EventListener;
+    var addEventListener = 'add' + EventListener;
+    var removeEventListener = 'remove' + EventListener;
     var newScrollX, newScrollY;
 
     var dragged = [];
@@ -40,7 +40,7 @@
         // cloning into array since HTMLCollection is updated dynamically
         dragged = [].slice.call(_document.getElementsByClassName('dragscroll'));
         for (i = 0; i < dragged.length;) {
-            (function(el, lastClientX, lastClientY, pushed, scroller, cont){
+            (function(el, lastClientX, lastClientY, pushed, scroller, cont) {
                 (cont = el.container || el)[addEventListener](
                     mousedown,
                     cont.md = function(e) {
@@ -59,17 +59,17 @@
                 );
 
                 _window[addEventListener](
-                    mouseup, cont.mu = function() {pushed = 0;}, 0
+                    mouseup, cont.mu = function() { pushed = 0; }, 0
                 );
 
                 _window[addEventListener](
                     mousemove,
                     cont.mm = function(e) {
                         if (pushed) {
-                            (scroller = el.scroller||el).scrollLeft -=
-                                newScrollX = (- lastClientX + (lastClientX=e.clientX));
+                            (scroller = el.scroller || el).scrollLeft -=
+                                newScrollX = (-lastClientX + (lastClientX = e.clientX));
                             scroller.scrollTop -=
-                                newScrollY = (- lastClientY + (lastClientY=e.clientY));
+                                newScrollY = (-lastClientY + (lastClientY = e.clientY));
                             if (el == _document.body) {
                                 (scroller = _document.documentElement).scrollLeft -= newScrollX;
                                 scroller.scrollTop -= newScrollY;
@@ -77,7 +77,7 @@
                         }
                     }, 0
                 );
-             })(dragged[i++]);
+            })(dragged[i++]);
         }
     };
 
@@ -93,16 +93,17 @@
 
 function zoomIn(n) {
     var imgSize = document.getElementById('dragsimg').style.width;
-    var zoom = Number(imgSize.replace(/[^0-9]/g,'')) + n;
+    var zoom = Number(imgSize.replace(/[^0-9]/g, '')) + n;
     document.getElementById('dragsimg').style.width = zoom + '%';
 }
+
 function zoomOut(n) {
     var imgSize = document.getElementById('dragsimg').style.width;
 
-    if(Number(imgSize.replace(/[^0-9]/g,''))<=100){
+    if (Number(imgSize.replace(/[^0-9]/g, '')) <= 100) {
         return false;
     }
 
-    var zoom = Number(imgSize.replace(/[^0-9]/g,'')) - n;
+    var zoom = Number(imgSize.replace(/[^0-9]/g, '')) - n;
     document.getElementById('dragsimg').style.width = zoom + '%';
 }

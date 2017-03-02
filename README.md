@@ -30,25 +30,12 @@ Load the `dragscroll.js` in a preferable way (that is an UMD module):
 <script src="path/to/dragscroll.js"></script>
 ```
 
-Add a style to `dragscroll` class:
-```css
-.dragscroll{
-  overflow: scroll;
-  cursor : grab;
-  cursor : -o-grab;
-  cursor : -moz-grab;
-  cursor : -webkit-grab;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-```
-
 Add the `dragscroll` class to a scrollable element:
 ```html
 <button id="zoom-in" onclick="zoomIn(20);">확대</button>
 <button id="zoom-out" onclick="zoomOut(20);">축소</button>
 <div class="dragscroll">
-  <img id="dragsimg" src="./test.png" />
+  <img id="dragsimg" src="./test.png" style="width:100%"/>
 </div>
 ```
 
