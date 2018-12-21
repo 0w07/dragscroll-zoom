@@ -4,7 +4,7 @@ dragscroll-zoom
 Dragscroll-Zoom is a micro JavaScript library (910 bytes minified) which
 enables scrolling via holding the mouse button ("drag and drop" or
 "click and hold" style, [online
-demo](http://cymakr.github.io/dragscroll-zoom.html)). It has no dependencies and
+demo](http://0w07.github.io/dragscroll-zoom.html)). It has no dependencies and
 is written in vanilla JavaScript (which means it works anywhere).  
 
 And I added a zoom function. (It is getting better)
