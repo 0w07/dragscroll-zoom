@@ -1,35 +1,38 @@
 {
-    "author": "cymakr <cymakr@gmail.com>",
-    "name": "dragscroll-zoom",
-    "description": "Tiny library for drag-n-drop scrolling style and zoom in~out",
-    "version": "1.0.1",
-    "keywords": [
-        "dragscroll",
-        "scroll",
-        "scrolling",
-        "mouse",
-        "hold",
-        "drag-n-drop",
-        "drag-and-drop",
-        "click-n-hold",
-        "click-and-hold",
-        "drag",
-        "viewport",
-        "zoom"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/cymakr/dragscroll-zoom.git"
-    },
-    "browser": {
-        "fs": false,
-        "child_process": false
-    },
-    "main": "dragscroll.js",
-    "dependencies": {},
-    "devDependencies": {},
-    "optionalDependencies": {},
-    "engines": {
-        "node": "*"
-    }
+  "author": "cymakr <cymakr@gmail.com>",
+  "name": "dragscroll-zoom",
+  "description": "Tiny library for drag-n-drop scrolling style and zoom in~out",
+  "version": "1.0.1",
+  "keywords": [
+    "dragscroll",
+    "scroll",
+    "scrolling",
+    "mouse",
+    "hold",
+    "drag-n-drop",
+    "drag-and-drop",
+    "click-n-hold",
+    "click-and-hold",
+    "drag",
+    "viewport",
+    "zoom"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cymakr/dragscroll-zoom.git"
+  },
+  "browser": {
+    "fs": false,
+    "child_process": false
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@cymakr"
+  },
+  "main": "dragscroll.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
 }
