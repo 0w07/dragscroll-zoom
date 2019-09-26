@@ -12,13 +12,13 @@ And I added a zoom function. (It is getting better)
 ### Usage
 
 
-Install it using [Bower](http://bower.io/):
+<!-- Install it using [Bower](http://bower.io/):
 
 ```sh
-$ bower install dragscroll-zoom
-```
+$ bower install dragscroll-zoom 
+```-->
 
-or npm:
+Install it using npm:
 
 ```sh
 $ npm install dragscroll-zoom
