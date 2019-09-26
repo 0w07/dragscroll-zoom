@@ -1,5 +1,5 @@
 {
-  "author": "cymakr <cymakr@gmail.com>",
+  "author": "vv2t <vv2@tuta.io>",
   "name": "dragscroll-zoom",
   "description": "Tiny library for drag-n-drop scrolling style and zoom in~out",
   "version": "1.0.1",
@@ -19,14 +19,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/cymakr/dragscroll-zoom.git"
+    "url": "git://github.com/vv2t/dragscroll-zoom.git"
   },
   "browser": {
     "fs": false,
     "child_process": false
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@cymakr"
+    "registry": "https://npm.pkg.github.com/@vv2t"
   },
   "main": "dragscroll.js",
   "dependencies": {},
